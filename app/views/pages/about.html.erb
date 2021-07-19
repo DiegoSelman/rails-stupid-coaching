@@ -1,0 +1,12 @@
+<h1>Our first view 🚀</h1>
+
+<% members = [ 'thanh', 'dimitri', 'germain', 'damien', 'julien' ] %>
+
+<h2>Meet our team</h2>
+<ol>
+  <% members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
+
+<%= link_to "Meet our team", contact_path %>
